@@ -1350,8 +1350,7 @@ async def advantage_spell_chok(client, msg):
         button = [[
             InlineKeyboardButton('📕 ɪɴsᴛʀᴜᴄᴛɪᴏɴ 📕', callback_data='funda')
             ],[
-            InlineKeyboardButton('Fuck', callback_data='funda')
-            ][
+            InlineKeyboardButton('Fuck', callback_data='funda')            
             InlineKeyboardButton('Myr', callback_data='funda')
             ],[      
             InlineKeyboardButton('🔍 ꜱᴇᴀʀᴄʜ ɢᴏᴏɢʟᴇ 🔍', url=f"https://www.google.com/search?q={reqst_gle}")
