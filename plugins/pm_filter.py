@@ -1353,7 +1353,7 @@ async def advantage_spell_chok(client, msg):
             InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('ᴏᴡɴ ɪɴғᴏ', url='https://t.me/sk_movies12')
         ], [
-            InlineKeyboardButton('ʜᴇʟᴘ', callback_data='funda'),
+            InlineKeyboardButton('ʜᴇʟᴘ', callback_data='pepe'),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='funda')
          ],[
             InlineKeyboardButton('ʙᴀᴄᴋ ᴛᴏ sᴛᴀʀᴛ', callback_data='surprise')
@@ -1363,6 +1363,12 @@ async def advantage_spell_chok(client, msg):
         await k.delete()
         await msg.delete()
         return
+    await query.message.edit_text(                     
+            text=script.PEPE_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+    )
+
     movielist += [movie.get('title') for movie in movies]
     movielist += [f"{movie.get('title')} {movie.get('year')}" for movie in movies]
     SPELL_CHECK[mv_id] = movielist
