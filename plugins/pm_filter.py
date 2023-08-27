@@ -1353,7 +1353,7 @@ async def advantage_spell_chok(client, msg):
             InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('ᴏᴡɴ ɪɴғᴏ', url='https://t.me/sk_movies12')
         ], [
-            InlineKeyboardButton('ʜᴇʟᴘ', callback_data='pepe'),
+            InlineKeyboardButton('ʜᴇʟᴘ', await msg.reply_text(text=script.PEPE_TXT, reply_markup=InlineKeyboardMarkup(btn)),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='funda')
          ],[
             InlineKeyboardButton('ʙᴀᴄᴋ ᴛᴏ sᴛᴀʀᴛ', callback_data='surprise')
