@@ -610,7 +610,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
        xd = query.message.reply_to_message.text.replace(" ", "+")
        btn = [
            [
-               InlineKeyboardButton("Search on Google", url=f"https://www.google.com/search?q={xd}")
+               InlineKeyboardButton("Search on Google", url=f"https://www.google.com/search?q={xd}"),
                InlineKeyboardButton("back", callback_data="nlang")
            ]
        ]
