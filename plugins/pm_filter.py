@@ -1375,17 +1375,21 @@ async def advantage_spell_chok(client, msg):
     movielist = []
     if not movies:
         reqst_gle = mv_rqst.replace(" ", "+")
+        btn_duction = InlineKeyboardButton(" Introduction ", callback_data="funda")
+
+        intro_row = [btn_duction]
         btn_eng = InlineKeyboardButton("ENG", callback_data="eng")
         btn_mal = InlineKeyboardButton("MAL", callback_data="mal")
         btn_hin = InlineKeyboardButton("HIN", callback_data="hin")
         btn_tam = InlineKeyboardButton("TAM", callback_data="tam")
+        btn_tel = InlineKeyboardButton("TEL", callback_data="tel")
 
-        language_row = [btn_eng, btn_mal, btn_hin, btn_tam]
+        language_row = [btn_eng, btn_mal, btn_hin, btn_tam, btn_tel]
         btn_google = InlineKeyboardButton("Search on Google", url="https://www.google.com/")
 
         google_row = [btn_google]
 
-        keyboard = InlineKeyboardMarkup(inline_keyboard=[language_row, google_row])
+        keyboard = InlineKeyboardMarkup(inline_keyboard=[intro_row, language_row, google_row])
 
         k = await msg.reply_text(text=script.PEPE_TXT, reply_markup=keyboard)
         await asyncio.sleep(20)
