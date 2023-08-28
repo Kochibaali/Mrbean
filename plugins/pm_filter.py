@@ -580,10 +580,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
        await query.message.edit_text(text=f"Hey {query.from_user.mention}<b><u>If you want to get the movie, follow the below…</u>👇\n\n<i>🔹Ask for correct spelling. (Type in English Only)\n\n🔸When requesting a movie, Type in English Only and Language also.\n\n🔹Don't ask for unreleased movies.\n\n🔸 [Movie Name, Year, Language] Ask this way.\n\n🔹 Don't Use symbols while requesting Movies.[+:;'*!-`&.. etc]</b></i>")
     
     elif query.data == "mal":
-       xd = msg.text.replace(" ", "+")
+       search_query = movie.replace(' ', '+')
        btn = [
            [
-               InlineKeyboardButton("Search on Google", url=f"https://www.google.com/search?q={xd}"),
+               InlineKeyboardButton("Search on Google", url=f"https://www.google.com/search?q={search_query}"),
                InlineKeyboardButton("back", callback_data="back")
            ]
        ]
