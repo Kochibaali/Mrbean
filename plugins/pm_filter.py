@@ -580,7 +580,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
        await query.message.edit_text(text=f"Hey {query.from_user.mention} <b><u>If you want to get the movie, follow the below…</u>👇\n\n<i>🔹Ask for correct spelling. (Type in English Only)\n\n🔸When requesting a movie, Type in English Only and Language also.\n\n🔹Don't ask for unreleased movies.\n\n🔸 [Movie Name, Year, Language] Ask this way.\n\n🔹 Don't Use symbols while requesting Movies.[+:;'*!-`&.. etc]</b></i>")
     
     elif query.data == "mal":
-       await query.message.edit_text(text=f"Hey {query.from_user.mention} mallu")
        xd = query.message.reply_to_message.text.replace(" ", "+")
        btn = [
            [
@@ -588,7 +587,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                InlineKeyboardButton("back", callback_data="nlang")
            ]
        ]
-       await query.message.edit_text(text=query.message.reply_to_message.text, reply_markup=InlineKeyboardMarkup(btn))
+       await query.message.edit_text(text=f"{query.from_user.mention} ഹായ് ദാ കുട്ടാ", query.message.reply_to_message.text, reply_markup=InlineKeyboardMarkup(btn))
 
     elif query.data == "nlang":
        btn_eng = InlineKeyboardButton("ENG", callback_data="eng")
