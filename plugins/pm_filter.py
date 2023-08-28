@@ -581,6 +581,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "mal":
        search_query = movie.replace(' ', '+')
+       movie = movies[(int(movie_))] 
        btn = [
            [
                InlineKeyboardButton("Search on Google", url=f"https://www.google.com/search?q={search_query}"),
