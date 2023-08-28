@@ -627,7 +627,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
        await query.message.edit_text(text=f"Hey {query.from_user.mention}👋 <b><u>यदि आप मूवी प्राप्त करना चाहते हैं, तो नीचे दिए गए चरणों का पालन करें...</u><i>👇\n\n🔹सही वर्तनी के लिए पूछें। (केवल अंग्रेज़ी में)\n\n🔸फिल्में अंग्रेजी में टाइप करें और केवल पूछें।\n\n🔹अप्रकाशित फिल्मों के लिए न पूछें।\n\n🔸 [मूवी का नाम, वर्ष, भाषा] इस तरह पूछें।\n\n🔹फिल्मों का अनुरोध करते समय प्रतीकों से बचें। [+:;'*!-&.. आदि]</b></i>\n\n🌎 ||अपनी मूवी के विवरण के लिए नीचे दिए गए Google बटन का उपयोग करें||", reply_markup=InlineKeyboardMarkup(btn))
     
     elif query.data == "nlang":
-       btn_duction = InlineKeyboardButton(" 🔺Must Read🔻 ", callback_data="minfo")
+       btn_duction = InlineKeyboardButton(" 🔺MUST READ🔻 ", callback_data="minfo")
 
        intro_row = [btn_duction]
        btn_eng = InlineKeyboardButton("ENG", callback_data="eng")
@@ -643,10 +643,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
        keyboard = InlineKeyboardMarkup(inline_keyboard=[intro_row, language_row, google_row])
  
-       await query.message.edit_text(text=f"<b>Hey {query.from_user.mention}👋\n\n⌛️Something is wrong❕\n\nI couldn't find anything related to your request 🫧\n\nYou can find the way to get the movie from the buttons below🍃</b>\n\n ||Click the below buttons for more details🏌️||", reply_markup=keyboard)
+       await query.message.edit_text(text=f"<b>Hey 👋 {query.from_user.mention} ⌛️Something is wrong❕\n\nI couldn't find anything related to your request 🫧\n\nYou can find the way to get the movie from the buttons below🍃</b>\n\n ||Click the below buttons for more details🏌️||", reply_markup=keyboard)
         
     elif query.data == "minfo":
-        await query.answer(f"🥇<b>Go to Google and type the correct spelling in <u>English Letters</u> and send it 🎯</b>\n\nSearch format:-\nMovies -  Varisu 2023\nSeries    -  Dark S01 E01\n\n<i>For more information, click on the button in your language below🪝</i>", show_alert=True)
+        await query.answer(f"🥇<b>Go to Google and type the correct spelling in <u>English Letters</u> and send it 🎯</b>\n\nSearch format:-\nMovies -  Varisu 2023\nSeries    -  Dark S01 E01\n\n<i>Click on the button in your language below🪝</i>", show_alert=True)
 
     elif query.data == "sinfo":
         await query.answer("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ᴍᴏɴᴇʏ ʜᴇɪsᴛ S01E01\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)\n\n©️ ᴄɪɴᴇᴍᴀʟᴀ.ᴄᴏᴍ", show_alert=True)      
@@ -1432,7 +1432,7 @@ async def advantage_spell_chok(client, msg):
 
         keyboard = InlineKeyboardMarkup(inline_keyboard=[intro_row, language_row, google_row])
 
-        k = await msg.reply_text(text=f"<b>Hey 👋 {msg.from_user.mention} ⌛️Something is wrong❕\n\n<i>I couldn't find anything related to your request 🫧\n\nYou can find the way to get the movie from the buttons below🍃</i></b>\n\n||Click the below buttons for more details🧜||", reply_markup=keyboard)
+        k = await msg.reply_text(text=f"<b>Hey 👋 {msg.from_user.mention} ⌛️Something is wrong❕\n\nI couldn't find anything related to your request 🫧\n\nYou can find the way to get the movie from the buttons below🍃</b>\n\n||Click the below buttons for more details🧜||", reply_markup=keyboard)
         await asyncio.sleep(120)
         await k.delete()
         await msg.delete()
