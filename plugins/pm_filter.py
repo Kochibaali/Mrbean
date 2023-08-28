@@ -587,7 +587,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                InlineKeyboardButton("back", callback_data="nlang")
            ]
        ]
-       await query.message.edit_text(text=f"{query.from_user.mention} ഹായ് ദാ കുട്ടാ", query.message.reply_to_message.text, reply_markup=InlineKeyboardMarkup(btn))
+       await query.message.edit_text(text=f"{query.from_user.mention} ഹായ് ദാ കുട്ടാ", reply_markup=InlineKeyboardMarkup(btn)
 
     elif query.data == "nlang":
        btn_eng = InlineKeyboardButton("ENG", callback_data="eng")
