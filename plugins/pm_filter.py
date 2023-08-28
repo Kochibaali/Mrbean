@@ -1348,15 +1348,13 @@ async def advantage_spell_chok(client, msg):
     if not movies:
         reqst_gle = mv_rqst.replace(" ", "+")
         buttons = [[
-            InlineKeyboardButton('× ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('NOTHING', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('ᴏᴡɴ ɪɴғᴏ', url='https://t.me/sk_movies12')
-        ], [
-            InlineKeyboardButton('ʜᴇʟᴘ', await msg.reply_text(text=script.PEPE_TXT, reply_markup=InlineKeyboardMarkup(buttons))),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='funda')
-         ],[
-            InlineKeyboardButton('ʙᴀᴄᴋ ᴛᴏ sᴛᴀʀᴛ', callback_data='surprise')
+            InlineKeyboardButton('TAM', url='https://t.me/sk_movies12'),
+            InlineKeyboardButton('TEL', url='https://t.me/sk_movies12'),
+            InlineKeyboardButton('HIN', url='https://t.me/sk_movies12'),
+            InlineKeyboardButton('ENG', url='https://t.me/sk_movies12'),
+            InlineKeyboardButton('MAL', url='https://t.me/sk_movies12')
         ]]        
         k=await msg.reply("<b>𝖲ᴏʀʀʏ 𝖭ᴏ 𝖥ɪʟᴇ𝗌 𝖶ᴇʀᴇ 𝖥ᴏᴜɴᴅ.\n\n𝖢ʜᴇᴄᴋ 𝖸ᴏᴜʀ 𝖲ᴘᴇʟʟɪɴɢ ɪɴ 𝖦ᴏᴏɢʟᴇ ᴀɴᴅ 𝖳ʀʏ 𝖠ɢᴀɪɴ. ♻️\n\n𝖱ᴇᴀᴅ 𝖨ɴ𝗌ᴛʀᴜᴄᴛɪᴏɴ𝗌 ғᴏʀ ʙᴇᴛᴛᴇʀ 𝖱ᴇ𝗌ᴜʟᴛ𝗌 👇🏻</b>", reply_markup=InlineKeyboardMarkup(buttons))    
         await asyncio.sleep(20)
