@@ -584,7 +584,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                InlineKeyboardButton("back", callback_data="nlang")
            ]
        ]
-       await query.message.edit_text(text=f"Hey {query.from_user.mention} 👋<b><u> If you want to get the movie, follow the below…<\u>👇\n\n<i>🔹Ask for correct spelling. (English)\n\n🔸Ask for movies in English only.\n\n🔹Don't ask for unreleased movies.\n\n🔸 [Movie Name, Year, Language] Ask this way.\n\n🔹 Don't Use symbols while requesting movies. (+:;'"!-`|...etc)</b></i> 🌏|| Use the Google Button below for your movie details||", reply_markup=InlineKeyboardMarkup(btn))    
+       await query.message.edit_text(text=f"Hey {query.from_user.mention} 👋<b><u> If you want to get the movie, follow the below…</u>👇\n\n<i>🔹Ask for correct spelling. (English)\n\n🔸Ask for movies in English only.\n\n🔹Don't ask for unreleased movies.\n\n🔸 [Movie Name, Year, Language] Ask this way.\n\n🔹 Don't Use symbols while requesting movies. (+:;'!-`|...etc)</b></i> 🌏|| Use the Google Button below for your movie details||", reply_markup=InlineKeyboardMarkup(btn))    
 
     elif query.data == "mal":
        xd = query.message.reply_to_message.text.replace(" ", "+")
