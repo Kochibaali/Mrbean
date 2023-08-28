@@ -627,22 +627,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
        await query.message.edit_text(text=f"Hey {query.from_user.mention} <b><u>यदि आप मूवी प्राप्त करना चाहते हैं, तो नीचे दिए गए चरणों का पालन करें...</u><i>👇\n\n🔹सही वर्तनी के लिए पूछें। (केवल अंग्रेज़ी में)\n\n🔸फिल्में अंग्रेजी में टाइप करें और केवल पूछें।\n\n🔹अप्रकाशित फिल्मों के लिए न पूछें।\n\n🔸 [मूवी का नाम, वर्ष, भाषा] इस तरह पूछें।\n\n🔹फिल्मों का अनुरोध करते समय प्रतीकों से बचें। [+:;'*!-&.. आदि]</b></i>\n\n🌎 ||अपनी मूवी के विवरण के लिए नीचे दिए गए Google बटन का उपयोग करें||", reply_markup=InlineKeyboardMarkup(btn))
     
     elif query.data == "nlang":
-        intro_row = [btn_duction]
-        btn_eng = InlineKeyboardButton("ENG", callback_data="eng")
-        btn_mal = InlineKeyboardButton("MAL", callback_data="mal")
-        btn_hin = InlineKeyboardButton("HIN", callback_data="hin")
-        btn_tam = InlineKeyboardButton("TAM", callback_data="tam")
-        btn_tel = InlineKeyboardButton("TEL", callback_data="tel")
+       btn_duction = InlineKeyboardButton(" Introduction ", callback_data="funda")
 
-        language_row = [btn_eng, btn_mal, btn_hin, btn_tam, btn_tel]
-        btn_google = InlineKeyboardButton("Search on Google", url="https://www.google.com/")
+       intro_row = [btn_duction]
+       btn_eng = InlineKeyboardButton("ENG", callback_data="eng")
+       btn_mal = InlineKeyboardButton("MAL", callback_data="mal")
+       btn_hin = InlineKeyboardButton("HIN", callback_data="hin")
+       btn_tam = InlineKeyboardButton("TAM", callback_data="tam")
+       btn_tel = InlineKeyboardButton("TEL", callback_data="tel")
 
-        google_row = [btn_google]
+       language_row = [btn_eng, btn_mal, btn_hin, btn_tam, btn_tel]
+       btn_google = InlineKeyboardButton("Search on Google", url="https://www.google.com/")
 
-        keyboard = InlineKeyboardMarkup(inline_keyboard=[intro_row, language_row, google_row])
+       google_row = [btn_google]
 
-        await query.message.edit_text(text=script.PEPE_TXT, reply_markup=keyboard)
-    
+       keyboard = InlineKeyboardMarkup(inline_keyboard=[intro_row, language_row, 
+        
     elif query.data == "minfo":
         await query.answer("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ᴀᴠᴀᴛᴀʀ: ᴛʜᴇ ᴡᴀʏ ᴏғ ᴡᴀᴛᴇʀ\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)\n\n©️ ᴄɪɴᴇᴍᴀʟᴀ.ᴄᴏᴍ", show_alert=True)
 
