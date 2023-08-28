@@ -580,7 +580,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
        await query.message.edit_text(text=f"Hey {query.from_user.mention}<b><u>If you want to get the movie, follow the below…</u>👇\n\n<i>🔹Ask for correct spelling. (Type in English Only)\n\n🔸When requesting a movie, Type in English Only and Language also.\n\n🔹Don't ask for unreleased movies.\n\n🔸 [Movie Name, Year, Language] Ask this way.\n\n🔹 Don't Use symbols while requesting Movies.[+:;'*!-`&.. etc]</b></i>")
     
     elif query.data =="mal":
-       await
        btn = [[InlineKeyboardButton("ʜᴇʟᴘ", callback_data="language_row")]]
        await query.message.edit_text(text="മലയാളം", reply_markup=InlineKeyboardMarkup(btn))
 
