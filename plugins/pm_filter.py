@@ -643,10 +643,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
        keyboard = InlineKeyboardMarkup(inline_keyboard=[intro_row, language_row, google_row])
  
-       await query.message.edit_text(text=f"<i><b>Hey {query.from_user.mention}👋\n\n⌛️Something is wrong❕\n\nI couldn't find anything related to your request 🫧\n\nYou can find the way to get the movie from the buttons below🌈</i></b>\n\n ||Click the below buttons for more details🏌️||", reply_markup=keyboard)
+       await query.message.edit_text(text=f"<b>Hey {query.from_user.mention}👋\n\n⌛️Something is wrong❕\n\nI couldn't find anything related to your request 🫧\n\nYou can find the way to get the movie from the buttons below🍃</b>\n\n ||Click the below buttons for more details🏌️||", reply_markup=keyboard)
         
     elif query.data == "minfo":
-        await query.answer(f"🥇<b>Go to Google and type the correct spelling in <u>English Letters</u> and send it 🎯</b>\n\nSearch format:-\nMovies -  Varisu 2023\nSeries    -  Dark S01 E01\n\n<i>For more information on this, click on the Language Buttons button in your language below🪝</i>", show_alert=True)
+        await query.answer(f"🥇<b>Go to Google and type the correct spelling in <u>English Letters</u> and send it 🎯</b>\n\nSearch format:-\nMovies -  Varisu 2023\nSeries    -  Dark S01 E01\n\n<i>For more information, click on the button in your language below🪝</i>", show_alert=True)
 
     elif query.data == "sinfo":
         await query.answer("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ᴍᴏɴᴇʏ ʜᴇɪsᴛ S01E01\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)\n\n©️ ᴄɪɴᴇᴍᴀʟᴀ.ᴄᴏᴍ", show_alert=True)      
