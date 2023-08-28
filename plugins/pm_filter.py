@@ -587,7 +587,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
                InlineKeyboardButton("back", callback_data="back")
            ]
        ]
-       await query.message.edit_text(text=query.message.reply_to_message.text, reply_markup=InlineKeyboardMarkup(btn))    
+       await query.message.edit_text(text=query.message.reply_to_message.text, reply_markup=InlineKeyboardMarkup(btn))
+
+    elif query.data == "nlang":
+       btn_eng = InlineKeyboardButton("ENG", callback_data="eng")
+       btn_mal = InlineKeyboardButton("MAL", callback_data="mal")
+       btn_hin = InlineKeyboardButton("HIN", callback_data="hin")
+       btn_tam = InlineKeyboardButton("TAM", callback_data="tam")
+
+       language_row = [btn_eng, btn_mal, btn_hin, btn_tam]
+       btn_google = InlineKeyboardButton("Search on Google", url="https://www.google.com/")
+
+       google_row = [btn_google]
+
+       keyboard = InlineKeyboardMarkup(inline_keyboard=[language_row, google_row])
+
+       await query.message.edit_text(text=script.PEPE_TXT, reply_markup=keyboard)
+    
     elif query.data == "minfo":
         await query.answer("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ᴀᴠᴀᴛᴀʀ: ᴛʜᴇ ᴡᴀʏ ᴏғ ᴡᴀᴛᴇʀ\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)\n\n©️ ᴄɪɴᴇᴍᴀʟᴀ.ᴄᴏᴍ", show_alert=True)
 
