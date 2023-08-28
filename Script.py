@@ -5,8 +5,14 @@ class script(object):
     HELP_TXT = """<b>𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂.</b>"""
 
-    PEPE_TXT = """<b>𝙷𝙴𝚈 {}
-okeda</b>"""
+    PEPE_TXT = """<𝙷𝙴𝚈{}
+<b>⌛️Something is wrong❕
+
+I couldn't find anything related to your request 🫧
+
+You can find the way to get the movie from the buttons below🌈
+
+Follow the buttons below✨</b>"""
  
 
 # ⚠️ Please don't change our credits 𝚃𝙷𝙰𝙽𝙺𝚂 𝚃𝙾 & 𝙳𝙴𝚅 👇🏻
