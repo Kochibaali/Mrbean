@@ -1362,7 +1362,7 @@ async def advantage_spell_chok(client, msg):
 
         keyboard = InlineKeyboardMarkup(inline_keyboard=[language_row, google_row])
 
-        await msg.reply_text(text=script.PEPE_TXT, reply_markup=keyboard)
+        k = await msg.reply_text(text=script.PEPE_TXT, reply_markup=keyboard)
         await asyncio.sleep(20)
         await k.delete()
         await msg.delete()
