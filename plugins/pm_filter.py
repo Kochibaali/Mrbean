@@ -1416,7 +1416,7 @@ async def advantage_spell_chok(client, msg):
     movielist = []
     if not movies:
         reqst_gle = mv_rqst.replace(" ", "+")
-        btn_duction = InlineKeyboardButton(" Introduction ", callback_data="funda")
+        btn_duction = InlineKeyboardButton(" 🔺MUST READ🔻 ", callback_data="funda")
 
         intro_row = [btn_duction]
         btn_eng = InlineKeyboardButton("ENG", callback_data="eng")
@@ -1432,16 +1432,12 @@ async def advantage_spell_chok(client, msg):
 
         keyboard = InlineKeyboardMarkup(inline_keyboard=[intro_row, language_row, google_row])
 
-        k = await msg.reply_text(text=script.PEPE_TXT, reply_markup=keyboard)
+        k = await msg.reply_text(text=f"Hey {msg.from_user.mention}👋 <b>⌛️Something is wrong❕\n\n</i></b>I couldn't find anything related to your request 🫧\n\nYou can find the way to get the movie from the buttons below🌈</i\n\n ||Click the below buttons for more details, reply_markup=keyboard)
         await asyncio.sleep(20)
         await k.delete()
         await msg.delete()
         return
-        await query.message.edit_text(                     
-            text=script.PEPE_TXT.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
+        
 
     movielist += [movie.get('title') for movie in movies]
     movielist += [f"{movie.get('title')} {movie.get('year')}" for movie in movies]
