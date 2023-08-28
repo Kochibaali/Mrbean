@@ -584,7 +584,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
        btn = [
            [
                InlineKeyboardButton("Search on Google", url=f"https://www.google.com/search?q={xd}"),
-               InlineKeyboardButton("back", callback_data="back")
+               InlineKeyboardButton("back", callback_data="nlang")
            ]
        ]
        await query.message.edit_text(text=query.message.reply_to_message.text, reply_markup=InlineKeyboardMarkup(btn))
