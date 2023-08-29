@@ -627,17 +627,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
        await query.message.edit_text(text=f"Hey {query.from_user.mention}👋 <b><u>यदि आप मूवी प्राप्त करना चाहते हैं, तो नीचे दिए गए चरणों का पालन करें...</u><i>👇\n\n🔹सही वर्तनी के लिए पूछें। (केवल अंग्रेज़ी में)\n\n🔸फिल्में अंग्रेजी में टाइप करें और केवल पूछें।\n\n🔹अप्रकाशित फिल्मों के लिए न पूछें।\n\n🔸 [मूवी का नाम, वर्ष, भाषा] इस तरह पूछें।\n\n🔹फिल्मों का अनुरोध करते समय प्रतीकों से बचें। [+:;'*!-&.. आदि]</b></i>\n\n🌎 ||अपनी मूवी के विवरण के लिए नीचे दिए गए Google बटन का उपयोग करें||", reply_markup=InlineKeyboardMarkup(btn))
     
     elif query.data == "nlang":
-       btn_duction = InlineKeyboardButton(" 🔺MUST READ🔻 ", callback_data="minfo")
+       btn_duction = InlineKeyboardButton("✯ 𝐌𝐮𝐬𝐭 𝐑𝐞𝐚𝐝 ✯", callback_data="minfo")
 
        intro_row = [btn_duction]
-       btn_eng = InlineKeyboardButton("ENG", callback_data="eng")
-       btn_mal = InlineKeyboardButton("MAL", callback_data="mal")
-       btn_hin = InlineKeyboardButton("HIN", callback_data="hin")
-       btn_tam = InlineKeyboardButton("TAM", callback_data="tam")
-       btn_tel = InlineKeyboardButton("TEL", callback_data="tel")
+       btn_eng = InlineKeyboardButton("ᴇɴɢ", callback_data="eng")
+       btn_mal = InlineKeyboardButton("ᴍᴀʟ", callback_data="mal")
+       btn_hin = InlineKeyboardButton("ʜɪɴ", callback_data="hin")
+       btn_tam = InlineKeyboardButton("ᴛᴀᴍ", callback_data="tam")
+       btn_tel = InlineKeyboardButton("ᴛᴇʟ", callback_data="tel")
 
        language_row = [btn_eng, btn_mal, btn_hin, btn_tam, btn_tel]
-       btn_google = InlineKeyboardButton("Search on Google", url="https://www.google.com/")
+       btn_google = InlineKeyboardButton("𝚂𝙴𝙰𝚁𝙲𝙷 𝙾𝙽 𝙶𝙾𝙾𝙶𝙻𝙴", url="https://www.google.com/")
 
        google_row = [btn_google]
 
@@ -648,11 +648,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "minfo":
        await query.answer(
        text=(
-            "🥇<b>Correct spelling in <u>English Letters</u> and send it 🎯</b>\n\n"
-            "Search format:-\n"
+            "🥇𝐆𝐨 𝐓𝐨 𝐆𝐨𝐨𝐠𝐥𝐞 𝐂𝐨𝐩𝐲 𝐂𝐨𝐫𝐫𝐞𝐜𝐭 𝐒𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐢𝐧 𝗢𝗻𝗹𝘆 𝗘𝗻𝗴𝗹𝗶𝘀𝗵 𝗟𝗲𝘁𝘁𝗲𝗿𝘀 𝐀𝐧𝐝 𝐒𝐞𝐧𝐭 𝐢𝐭🎯\n\n"
+            "𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐅𝐨𝐫𝐦𝐚𝐭:-\n"
             "Movies - Varisu 2023\n"
             "Series - Dark S01 E01\n\n"
-            "<i>Click on the button in your language below🪝</i>"
+            "𝗠𝗼𝗿𝗲 𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 :- 𝖢𝗅𝗂𝖼𝗄 𝖮𝗇 𝖳𝗁𝖾 𝖡𝗎𝗍𝗍𝗈𝗇 𝖨𝗇 𝖸𝗈𝗎𝗋 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾 𝖻𝖾𝗅𝗈𝗐🪝"
         ),
         show_alert=True
     )
@@ -1282,7 +1282,7 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="𝗡𝗼 𝗠𝗼𝗿𝗲 𝗣𝗮𝗴𝗲 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲", callback_data="pages")]
+            [InlineKeyboardButton(text="Nᴏ Mᴏʀᴇ Pᴀɢᴇ", callback_data="pages")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
@@ -1425,14 +1425,14 @@ async def advantage_spell_chok(client, msg):
     movielist = []
     if not movies:
         reqst_gle = mv_rqst.replace(" ", "+")
-        btn_duction = InlineKeyboardButton(" 🔺MUST READ🔻 ", callback_data="minfo")
+        btn_duction = InlineKeyboardButton(" ✰ 𝐌𝐮𝐬𝐭 𝐑𝐞𝐚𝐝 ✰ ", callback_data="minfo")
 
         intro_row = [btn_duction]
-        btn_eng = InlineKeyboardButton("ENG", callback_data="eng")
-        btn_mal = InlineKeyboardButton("MAL", callback_data="mal")
-        btn_hin = InlineKeyboardButton("HIN", callback_data="hin")
-        btn_tam = InlineKeyboardButton("TAM", callback_data="tam")
-        btn_tel = InlineKeyboardButton("TEL", callback_data="tel")
+        btn_eng = InlineKeyboardButton("ᴇɴɢ", callback_data="eng")
+        btn_mal = InlineKeyboardButton("ᴍᴀʟ", callback_data="mal")
+        btn_hin = InlineKeyboardButton("ʜɪɴ", callback_data="hin")
+        btn_tam = InlineKeyboardButton("ᴛᴀᴍ", callback_data="tam")
+        btn_tel = InlineKeyboardButton("ᴛᴇʟ", callback_data="tel")
 
         language_row = [btn_eng, btn_mal, btn_hin, btn_tam, btn_tel]
         btn_google = InlineKeyboardButton("Search on Google", url="https://www.google.com/")
