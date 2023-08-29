@@ -646,8 +646,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
        await query.message.edit_text(text=f"<b>Hey 👋 {query.from_user.mention} ⌛️Something is wrong❕\n\nI couldn't find anything related to your request 🫧\n\nYou can find the way to get the movie from the buttons below🍃</b>\n\n ||Click the below buttons for more details🏌️||", reply_markup=keyboard)
         
     elif query.data == "minfo":
-    await query.answer(
-        text=(
+       await query.answer(
+       text=(
             "🥇<b>Correct spelling in <u>English Letters</u> and send it 🎯</b>\n\n"
             "Search format:-\n"
             "Movies - Varisu 2023\n"
