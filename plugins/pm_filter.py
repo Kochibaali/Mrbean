@@ -646,7 +646,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
        await query.message.edit_text(text=f"<b>Hey 👋 {query.from_user.mention} ⌛️Something is wrong❕\n\nI couldn't find anything related to your request 🫧\n\nYou can find the way to get the movie from the buttons below🍃</b>\n\n ||Click the below buttons for more details🏌️||", reply_markup=keyboard)
         
     elif query.data == "minfo":
-        await query.answer(f"🥇<b>Correct spelling in <u>English Letters</u> and send it 🎯</b>\n\nSearch format:-\nMovies - Varisu 2023\nSeries - Dark S01 E01\n\n<i>Click on the button in your language below🪝</i>", show_alert=True)
+        await query.answer(text=f"🥇<b>Correct spelling in <u>English Letters</u> and send it 🎯</b>\n\nSearch format:-\nMovies - Varisu 2023\nSeries - Dark S01 E01\n\n<i>Click on the button in your language below🪝</i>", show_alert=True)
 
     elif query.data == "sinfo":
         await query.answer("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ᴍᴏɴᴇʏ ʜᴇɪsᴛ S01E01\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)\n\n©️ ᴄɪɴᴇᴍᴀʟᴀ.ᴄᴏᴍ", show_alert=True)      
