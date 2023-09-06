@@ -164,13 +164,7 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
-        btn.insert(0, 
-            [
-                InlineKeyboardButton(f'ɪɴғᴏ', 'minfo'),
-                InlineKeyboardButton(f'ғᴏʀᴍᴀᴛ', 'minfo')
-            ]
-        )                     
-
+        
 
     if 0 < offset <= 10:
         off_set = 0
@@ -184,6 +178,12 @@ async def next_page(bot, query):
              InlineKeyboardButton(f"𝗉𝖺𝗀𝖾 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
                                   callback_data="pages")]
         )
+        btn.insert(0, 
+            [
+                InlineKeyboardButton(f'⍟ ɪɴғᴏ', 'minfo'),
+                InlineKeyboardButton(f'ғᴏʀᴍᴀᴛ ✪', 'minfo')
+            ]
+        )
         btn.insert(0,
             [InlineKeyboardButton(f"⇩ {search} ⇩",callback_data="neosub")]
         )            
@@ -191,6 +191,12 @@ async def next_page(bot, query):
         btn.append(
             [InlineKeyboardButton(f"{math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
              InlineKeyboardButton("𝗇𝖾𝗑𝗍", callback_data=f"next_{req}_{key}_{n_offset}")])
+        btn.insert(0, 
+            [
+                InlineKeyboardButton(f'⍟ ɪɴғᴏ', 'minfo'),
+                InlineKeyboardButton(f'ғᴏʀᴍᴀᴛ ✪', 'minfo')
+            ]
+        )
         btn.insert(0,
             [InlineKeyboardButton(f"⇩ {search} ⇩",callback_data="neosub")])
     else:
@@ -200,6 +206,12 @@ async def next_page(bot, query):
                 InlineKeyboardButton(f"𝗉𝖺𝗀𝖾 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
                 InlineKeyboardButton("𝗇𝖾𝗑𝗍", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
+        )
+        btn.insert(0, 
+            [
+                InlineKeyboardButton(f'⍟ ɪɴғᴏ', 'minfo'),
+                InlineKeyboardButton(f'ғᴏʀᴍᴀᴛ ✪', 'minfo')
+            ]
         )
         btn.insert(0,
             [InlineKeyboardButton(f"⇩ {search} ⇩",callback_data="neosub")]
@@ -1279,12 +1291,7 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
-        btn.insert(0, 
-            [
-                InlineKeyboardButton(f'ɪɴғᴏ', 'minfo'),
-                InlineKeyboardButton(f'ғᴏʀᴍᴀᴛ', 'minfo')
-            ]
-        )        
+        
 
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
@@ -1294,12 +1301,24 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text=f"𝗉𝖺𝗀𝖾 1/{math.ceil(int(total_results) / 10)}", callback_data="pages"),
              InlineKeyboardButton(text="𝗇𝖾𝗑𝗍", callback_data=f"next_{req}_{key}_{offset}")]
         )
+        btn.insert(0, 
+            [
+                InlineKeyboardButton(f'⍟ ɪɴғᴏ', 'minfo'),
+                InlineKeyboardButton(f'ғᴏʀᴍᴀᴛ ✪', 'minfo')
+            ]
+        )
         btn.insert(0,
             [InlineKeyboardButton(f"⇩ {search} ⇩",callback_data="neosub")]
         )
     else:
         btn.append(
             [InlineKeyboardButton(text="Nᴏ Mᴏʀᴇ Pᴀɢᴇ", callback_data="pages")]
+        )
+        btn.insert(0, 
+            [
+                InlineKeyboardButton(f'⍟ ɪɴғᴏ', 'minfo'),
+                InlineKeyboardButton(f'ғᴏʀᴍᴀᴛ ✪', 'minfo')
+            ]
         )
         btn.insert(0,
             [InlineKeyboardButton(f"⇩ {search} ⇩",callback_data="neosub")]
