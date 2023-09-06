@@ -693,7 +693,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(f"۞ 𝖨𝖿 𝖸𝗈𝗎 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖬𝗈𝗏𝗂𝖾 𝖮𝗋 𝖬𝗈𝗏𝗂𝖾 𝖰𝗎𝖺𝗅𝗂𝗍𝗂𝖾𝗌 𝖨𝗌 𝖭𝗈𝗍 𝖠𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝖮𝗇 𝖳𝗁𝗂𝗌 𝖯𝖺𝗀𝖾, 𝖸𝗈𝗎 𝖢𝖺𝗇 𝖦𝗈 𝖳𝗈 𝖳𝗁𝖾 𝖭𝖾𝗑𝗍 𝖯𝖺𝗀𝖾 𝖡𝗒 𝖢𝗅𝗂𝖼𝗄𝗂𝗇𝗀 𝖳𝗁𝖾 𝖭𝖾𝗑𝗍 𝖡𝗎𝗍𝗍𝗈𝗇 𝖡𝖾𝗅𝗈𝗐\n\n✰𝖨𝖿 𝖸𝗈𝗎 𝖣𝗈𝗇'𝗍 𝖦𝖾𝗍 𝖠𝗇𝗒 𝖬𝗈𝗏𝗂𝖾𝗌 𝖮𝗋 𝖧𝖺𝗏𝖾 𝖠𝗇𝗒 𝖨𝗌𝗌𝗎𝖾 𝖨𝗇 𝖳𝗁𝗂𝗌 𝖡𝗈𝗍 𝖸𝗈𝗎 𝖢𝖺𝗇 𝖺𝗅𝗌𝗈 𝖢𝗈𝗆𝗉𝗅𝖺𝗂𝗇 𝖳𝗈 𝖡𝗈𝗍 𝖠𝖽𝗆𝗂𝗇𝗌!",show_alert=True)
 
     elif query.data == "neofor": 
-        await query.answer(f"𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐅𝐨𝐫𝐦𝐚𝐭 :-\nMovies - Varisu 2023 \nSeries - Dark S01E01\n\n𝖢𝗈𝗋𝗋𝖾𝖼𝗍 𝖲𝗉𝖾𝗅𝗅𝗂𝗇𝗀 𝖨𝗇 𝗘𝗻𝗴𝗹𝗶𝘀𝗵 𝗟𝗲𝘁𝘁𝗲𝗿𝘀 𝗢𝗻𝗹𝘆 𝖠𝗇𝖽 𝖣𝗈𝗇'𝗍 𝖴𝗌𝖾 𝖲𝗍𝗒𝗅𝗂𝗌𝗁 𝖥𝗈𝗇𝗍\n\n𝖯𝗋𝖾𝖣𝗏𝖽 - 𝖳𝗁𝖾𝖺𝗍𝗋𝖾 𝖯𝗋𝗂𝗇𝗍 𝖥𝗂𝗅𝖾𝗌\n𝖧𝖣𝖱𝗂𝗉   - 𝖮𝖳𝖳 𝖥𝗂𝗅𝖾𝗌\n𝖧𝖢 - 𝖧𝖣𝖱𝗂𝗉 - 𝖫𝖾𝖺𝗄𝖾𝖽 𝖥𝗂𝗅𝖾𝗌",show_alert=True)
+        await query.answer(f"Movies - Varisu 2023 \nSeries - Dark S01E01\n\n𝖢𝗈𝗋𝗋𝖾𝖼𝗍 𝖲𝗉𝖾𝗅𝗅𝗂𝗇𝗀 𝖨𝗇 𝗘𝗻𝗴𝗹𝗶𝘀𝗵 𝗟𝗲𝘁𝘁𝗲𝗿𝘀 𝗢𝗻𝗹𝘆 𝖠𝗇𝖽 𝖣𝗈𝗇'𝗍 𝖴𝗌𝖾 𝖲𝗍𝗒𝗅𝗂𝗌𝗁 𝖥𝗈𝗇𝗍\n\n𝖯𝗋𝖾𝖣𝗏𝖽 - 𝖳𝗁𝖾𝖺𝗍𝗋𝖾 𝖯𝗋𝗂𝗇𝗍 𝖥𝗂𝗅𝖾𝗌\n𝖧𝖣𝖱𝗂𝗉 - 𝖮𝖳𝖳 𝖥𝗂𝗅𝖾𝗌\n𝖧𝖢-𝖧𝖣𝖱𝗂𝗉 - 𝖫𝖾𝖺𝗄𝖾𝖽 𝖥𝗂𝗅𝖾𝗌",show_alert=True)
 
     elif query.data == "whyjoin":
         await query.answer(text="⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠\n\nIғ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ᴄᴏᴘʏ ʀɪɢʜᴛ ɪꜱ ʟᴏꜱᴛ , ᴡʜᴇɴ ᴀ ɴᴇᴡ ᴄʜᴀɴɴᴇʟ ɪꜱ ꜱᴛᴀʀᴛᴇᴅ, ɪᴛ ᴡɪʟʟ ʙᴇ ɴᴏᴛɪғɪᴇᴅ ᴏɴ ᴛʜɪꜱ ᴄʜᴀɴɴᴇʟ 🙂", show_alert=True)
