@@ -181,10 +181,15 @@ async def next_page(bot, query):
              InlineKeyboardButton(f"𝗉𝖺𝗀𝖾 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
                                   callback_data="pages")]
         )
+        btn.insert(0,
+            [InlineKeyboardButton(f"⇩ {search} ⇩",callback_data="neosub")]
+        )            
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton(f"{math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
              InlineKeyboardButton("𝗇𝖾𝗑𝗍", callback_data=f"next_{req}_{key}_{n_offset}")])
+        btn.insert(0,
+            [InlineKeyboardButton(f"⇩ {search} ⇩",callback_data="neosub")])
     else:
         btn.append(
             [
@@ -193,6 +198,9 @@ async def next_page(bot, query):
                 InlineKeyboardButton("𝗇𝖾𝗑𝗍", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
+        btn.insert(0,
+            [InlineKeyboardButton(f"⇩ {search} ⇩",callback_data="neosub")]
+        )           
     try:
         await query.edit_message_reply_markup(
             reply_markup=InlineKeyboardMarkup(btn)
@@ -1280,9 +1288,15 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text=f"𝗉𝖺𝗀𝖾 1/{math.ceil(int(total_results) / 10)}", callback_data="pages"),
              InlineKeyboardButton(text="𝗇𝖾𝗑𝗍", callback_data=f"next_{req}_{key}_{offset}")]
         )
+        btn.insert(0,
+            [InlineKeyboardButton(f"⇩ {search} ⇩",callback_data="neosub")]
+        )
     else:
         btn.append(
             [InlineKeyboardButton(text="Nᴏ Mᴏʀᴇ Pᴀɢᴇ", callback_data="pages")]
+        )
+        btn.insert(0,
+            [InlineKeyboardButton(f"⇩ {search} ⇩",callback_data="neosub")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
