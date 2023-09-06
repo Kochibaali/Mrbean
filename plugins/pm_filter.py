@@ -687,7 +687,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("▣ ᴛɪᴘs ▣\n\n★ ᴛʏᴘᴇ ᴄᴏʀʀᴇᴄᴛ sᴘᴇʟʟɪɴɢ (ɢᴏᴏɢʟᴇ)\n\n★ ɪғ ʏᴏᴜ ɴᴏᴛ ɢᴇᴛ ʏᴏᴜʀ ғɪʟᴇ ɪɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ᴛʜᴇɴ ᴛʜᴇ ɴᴇxᴛ sᴛᴇᴘ ɪs ᴄʟɪᴄᴋ ɴᴇxᴛ ʙᴜᴛᴛᴏɴ.\n\n★ ᴄᴏɴᴛɪɴᴜᴇ ᴛʜɪs ᴍᴇᴛʜᴏᴅ ᴛᴏ ɢᴇᴛᴛɪɴɢ ʏᴏᴜ ғɪʟᴇ\n\n❣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄɪɴᴇᴍᴀʟᴀ. ᴄᴏᴍ", show_alert=True)
 
     elif query.data == "neosub": 
-        await query.answer(f"✯ താഴെയുള്ള ബട്ടണിൽ വേണ്ട ക്വാളിറ്റി യിൽ ക്ലിക്ക് ചെയ്താൽ കിട്ടും⚡\n\n✯ 𝖢𝗅𝗂𝖼𝗄 𝗈𝗇 𝗍𝗁𝖾 𝗙𝗶𝗹𝗲 𝗡𝗮𝗺𝗲 𝖻𝖾𝗅𝗈𝗐 𝖻𝗎𝗍𝗍𝗈𝗇 🌈 𝖠𝗇𝖽 𝖲𝗍𝖺𝗋𝗍 𝖳𝗁𝖾 𝖡𝗈𝗍 🎯",show_alert=True)
+        await query.answer(f"✯ താഴെയുള്ള ബട്ടണിൽ വേണ്ട ക്വാളിറ്റിയുള്ള മൂവിയുടെ പേരിൽ ക്ലിക്ക് ചെയ്താൽ കിട്ടും⚡\n\n✯ 𝖢𝗅𝗂𝖼𝗄 𝗈𝗇 𝗍𝗁𝖾 𝗙𝗶𝗹𝗲 𝗡𝗮𝗺𝗲 𝖻𝖾𝗅𝗈𝗐 𝖻𝗎𝗍𝗍𝗈𝗇 🌈 𝖠𝗇𝖽 𝖲𝗍𝖺𝗋𝗍 𝖳𝗁𝖾 𝖡𝗈𝗍 🎯",show_alert=True)
 
     elif query.data == "neoinf": 
         await query.answer(f"۞ 𝖨𝖿 𝖸𝗈𝗎 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖬𝗈𝗏𝗂𝖾 𝖮𝗋 𝖬𝗈𝗏𝗂𝖾 𝖰𝗎𝖺𝗅𝗂𝗍𝗂𝖾𝗌 𝖨𝗌 𝖭𝗈𝗍 𝖠𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝖮𝗇 𝖳𝗁𝗂𝗌 𝖯𝖺𝗀𝖾, 𝖦𝗈 𝖳𝗈 𝖳𝗁𝖾 𝖭𝖾𝗑𝗍 𝖯𝖺𝗀𝖾 𝖡𝗒 𝖢𝗅𝗂𝖼𝗄𝗂𝗇𝗀 𝖳𝗁𝖾 𝖭𝖾𝗑𝗍 𝖡𝗎𝗍𝗍𝗈𝗇 𝖡𝖾𝗅𝗈𝗐\n\n✰ 𝖧𝖺𝗏𝖾 𝖠𝗇𝗒 𝖨𝗌𝗌𝗎𝖾 𝖨𝗇 𝖳𝗁𝗂𝗌 𝖡𝗈𝗍 𝖸𝗈𝗎 𝖢𝖺𝗇 𝖺𝗅𝗌𝗈 𝖢𝗈𝗆𝗉𝗅𝖺𝗂𝗇 𝖳𝗈 𝖡𝗈𝗍 𝖠𝖽𝗆𝗂𝗇𝗌!",show_alert=True)
@@ -1364,7 +1364,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"𝖧𝖾𝗒 👋🏻 {message.from_user.mention} \n\n<b><i>📫 Your Files is Ready Now</i></b>"
+        cap = f"𝖧𝖾𝗒 👋🏻 {message.from_user.mention}🏃 \n\n<b><i>📫 Your Files is Ready Now</i></b>"
     if imdb and imdb.get('poster'):
         try:
             if message.chat.id == SUPPORT_CHAT_ID:
