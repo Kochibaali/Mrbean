@@ -164,8 +164,11 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
-        btn.insert(0,
-            [InlineKeyboardButton(f"⇩ {search} ⇩",callback_data="neosub")]
+        btn.insert(0, 
+            [
+                InlineKeyboardButton(f'ɪɴғᴏ', 'minfo'),
+                InlineKeyboardButton(f'ғᴏʀᴍᴀᴛ', 'minfo')
+            ]
         )                     
 
 
@@ -1276,8 +1279,11 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
-        btn.insert(0,
-            [InlineKeyboardButton(f"⇩ {search} ⇩",callback_data="neosub")]
+        btn.insert(0, 
+            [
+                InlineKeyboardButton(f'ɪɴғᴏ', 'minfo'),
+                InlineKeyboardButton(f'ғᴏʀᴍᴀᴛ', 'minfo')
+            ]
         )        
 
     if offset != "":
