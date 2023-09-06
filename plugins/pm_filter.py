@@ -180,8 +180,8 @@ async def next_page(bot, query):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'⍟ ɪɴғᴏ', 'minfo'),
-                InlineKeyboardButton(f'ғᴏʀᴍᴀᴛ ✪', 'minfo')
+                InlineKeyboardButton(f'⍟ ɪɴғᴏ', 'neoinf'),
+                InlineKeyboardButton(f'ғᴏʀᴍᴀᴛ ✪', 'neofor')
             ]
         )
         btn.insert(0,
@@ -193,8 +193,8 @@ async def next_page(bot, query):
              InlineKeyboardButton("𝗇𝖾𝗑𝗍", callback_data=f"next_{req}_{key}_{n_offset}")])
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'⍟ ɪɴғᴏ', 'minfo'),
-                InlineKeyboardButton(f'ғᴏʀᴍᴀᴛ ✪', 'minfo')
+                InlineKeyboardButton(f'⍟ ɪɴғᴏ', 'neoinf'),
+                InlineKeyboardButton(f'ғᴏʀᴍᴀᴛ ✪', 'neofor')
             ]
         )
         btn.insert(0,
@@ -209,8 +209,8 @@ async def next_page(bot, query):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'⍟ ɪɴғᴏ', 'minfo'),
-                InlineKeyboardButton(f'ғᴏʀᴍᴀᴛ ✪', 'minfo')
+                InlineKeyboardButton(f'⍟ ɪɴғᴏ', 'neoinf'),
+                InlineKeyboardButton(f'ғᴏʀᴍᴀᴛ ✪', 'neofor')
             ]
         )
         btn.insert(0,
@@ -688,6 +688,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "neosub": 
         await query.answer(f"✯ താഴെയുള്ള ബട്ടണിൽ വേണ്ട ക്വാളിറ്റി യിൽ ക്ലിക്ക് ചെയ്താൽ കിട്ടും⚡\n\n✯ 𝖢𝗅𝗂𝖼𝗄 𝗈𝗇 𝗍𝗁𝖾 𝗙𝗶𝗹𝗲 𝗡𝗮𝗺𝗲 𝖻𝖾𝗅𝗈𝗐 𝖻𝗎𝗍𝗍𝗈𝗇 🌈 𝖠𝗇𝖽 𝖲𝗍𝖺𝗋𝗍 𝖳𝗁𝖾 𝖡𝗈𝗍 🎯",show_alert=True)
+
+    elif query.data == "neoinf": 
+        await query.answer(f"۞ 𝖨𝖿 𝖸𝗈𝗎 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖬𝗈𝗏𝗂𝖾 𝖮𝗋 𝖬𝗈𝗏𝗂𝖾 𝖰𝗎𝖺𝗅𝗂𝗍𝗂𝖾𝗌 𝖨𝗌 𝖭𝗈𝗍 𝖠𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝖮𝗇 𝖳𝗁𝗂𝗌 𝖯𝖺𝗀𝖾, 𝖸𝗈𝗎 𝖢𝖺𝗇 𝖦𝗈 𝖳𝗈 𝖳𝗁𝖾 𝖭𝖾𝗑𝗍 𝖯𝖺𝗀𝖾 𝖡𝗒 𝖢𝗅𝗂𝖼𝗄𝗂𝗇𝗀 𝖳𝗁𝖾 𝖭𝖾𝗑𝗍 𝖡𝗎𝗍𝗍𝗈𝗇 𝖡𝖾𝗅𝗈𝗐 \n\n✰ 𝖨𝖿 𝖸𝗈𝗎 𝖣𝗈𝗇'𝗍 𝖦𝖾𝗍 𝖠𝗇𝗒 𝖬𝗈𝗏𝗂𝖾𝗌 𝖮𝗋 𝖧𝖺𝗏𝖾 𝖠𝗇𝗒 𝖨𝗌𝗌𝗎𝖾 𝖨𝗇 𝖳𝗁𝗂𝗌 𝖡𝗈𝗍 𝖸𝗈𝗎 𝖢𝖺𝗇 𝖺𝗅𝗌𝗈 𝖢𝗈𝗆𝗉𝗅𝖺𝗂𝗇 𝖳𝗈 𝖡𝗈𝗍 𝖠𝖽𝗆𝗂𝗇𝗌!",show_alert=True)
+
+    elif query.data == "neofor": 
+        await query.answer(f"𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐅𝐨𝐫𝐦𝐚𝐭 :-\nMovies - Varisu 2023 \nSeries - Dark S01E01\n\n𝖢𝗈𝗋𝗋𝖾𝖼𝗍 𝖲𝗉𝖾𝗅𝗅𝗂𝗇𝗀 𝖨𝗇 𝗘𝗻𝗴𝗹𝗶𝘀𝗵 𝗟𝗲𝘁𝘁𝗲𝗿𝘀 𝗢𝗻𝗹𝘆 𝖠𝗇𝖽 𝖣𝗈𝗇'𝗍 𝖴𝗌𝖾 𝖲𝗍𝗒𝗅𝗂𝗌𝗁 𝖥𝗈𝗇𝗍\n\n𝐃𝐢𝐟𝐟𝐞𝐫𝐞𝐧𝐭𝐬 𝐓𝐲𝐩𝐞 𝐎𝐟 𝐅𝐢𝐥𝐞𝐬:-\n𝖯𝗋𝖾𝖣𝗏𝖽 - 𝖳𝗁𝖾𝖺𝗍𝗋𝖾 𝖯𝗋𝗂𝗇𝗍 𝖥𝗂𝗅𝖾𝗌\n𝖧𝖣𝖱𝗂𝗉   - 𝖮𝖳𝖳 𝖥𝗂𝗅𝖾𝗌\n𝖧𝖢 - 𝖧𝖣𝖱𝗂𝗉 - 𝖫𝖾𝖺𝗄𝖾𝖽 𝖥𝗂𝗅𝖾𝗌",show_alert=True)
 
     elif query.data == "whyjoin":
         await query.answer(text="⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠\n\nIғ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ᴄᴏᴘʏ ʀɪɢʜᴛ ɪꜱ ʟᴏꜱᴛ , ᴡʜᴇɴ ᴀ ɴᴇᴡ ᴄʜᴀɴɴᴇʟ ɪꜱ ꜱᴛᴀʀᴛᴇᴅ, ɪᴛ ᴡɪʟʟ ʙᴇ ɴᴏᴛɪғɪᴇᴅ ᴏɴ ᴛʜɪꜱ ᴄʜᴀɴɴᴇʟ 🙂", show_alert=True)
@@ -1303,8 +1309,8 @@ async def auto_filter(client, msg, spoll=False):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'⍟ ɪɴғᴏ', 'minfo'),
-                InlineKeyboardButton(f'ғᴏʀᴍᴀᴛ ✪', 'minfo')
+                InlineKeyboardButton(f'⍟ ɪɴғᴏ', 'neoinf'),
+                InlineKeyboardButton(f'ғᴏʀᴍᴀᴛ ✪', 'neofor')
             ]
         )
         btn.insert(0,
@@ -1316,8 +1322,8 @@ async def auto_filter(client, msg, spoll=False):
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'⍟ ɪɴғᴏ', 'minfo'),
-                InlineKeyboardButton(f'ғᴏʀᴍᴀᴛ ✪', 'minfo')
+                InlineKeyboardButton(f'⍟ ɪɴғᴏ', 'neoinf'),
+                InlineKeyboardButton(f'ғᴏʀᴍᴀᴛ ✪', 'neofor')
             ]
         )
         btn.insert(0,
