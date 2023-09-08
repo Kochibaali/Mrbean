@@ -44,7 +44,7 @@ SESSION = 'Media_search'
 API_ID = int(18674011)
 API_HASH = "38d3664512757d8830601169eff5a1de"
 BOT_TOKEN = "5491810950:AAG6Nhr-8kSCjVPDYLIKEdahA_zyTrARVXY"
-
+false =  False
 # Bot settings
 CACHE_TIME = int(300)
 USE_CAPTION_FILTER = False
