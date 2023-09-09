@@ -97,7 +97,7 @@ TEXT = environ.get("APPROVED_WELCOME_TEXT", "Hello {mention}\nWelcome To {title}
 APPROVED = environ.get("APPROVED_WELCOME", "off").lower()
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', "-1001934799142)
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', "-1001934799142")
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1001275345753').split()]
 PORT = os.environ.get("PORT", "8080")
