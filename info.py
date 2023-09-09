@@ -59,7 +59,7 @@ MELCOW_VID = environ.get('MELCOW_VID',"")
 
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1099497360 5583768837').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1099497360 5583768837 6446790411').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001477932100 -1001975909776').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -97,7 +97,7 @@ TEXT = environ.get("APPROVED_WELCOME_TEXT", "Hello {mention}\nWelcome To {title}
 APPROVED = environ.get("APPROVED_WELCOME", "off").lower()
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', "-1001934799142"))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', "-1001777724531"))
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1001275345753').split()]
 PORT = os.environ.get("PORT", "8080")
@@ -105,11 +105,11 @@ MAX_BTN = int(environ.get('MAX_BTN', "10"))
 S_GROUP = environ.get('S_GROUP',"https://t.me/new_movies_group_2021")
 MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/new_movies_group_2021")
 FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/+1dbVg9pA2GphZmI1")
-MSG_ALRT = environ.get('MSG_ALRT', '𝑪𝑯𝑬𝑪𝑲 & 𝑻𝑹𝒀 𝑨𝑳𝑳 𝑴𝒀 𝑭𝑬𝑨𝑻𝑼𝑹𝑬𝑺')
+MSG_ALRT = environ.get('MSG_ALRT', '𝖢𝗁𝖾𝖼𝗄 𝖬𝗋 𝖡𝖾𝖺𝗇 𝖥𝖾𝖺𝗍𝗎𝗋𝖾𝗌')
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', 0))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/new_movies_group_2021')
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "False")), False)
-P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
+P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CUSTOM_FILE_CAPTION}")
